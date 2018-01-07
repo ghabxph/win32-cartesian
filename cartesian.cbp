@@ -38,6 +38,7 @@
 		<Unit filename="cartesian.cpp" />
 		<Unit filename="cartesian.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="sigmoid-derivative.h" />
 		<Unit filename="sigmoid.h" />
 		<Extensions>
 			<code_completion />

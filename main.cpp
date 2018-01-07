@@ -20,6 +20,7 @@
  */
 #include <iostream>
 #include "cartesian.h"
+#include "sigmoid-derivative.h"
 #include "sigmoid.h"
 
 using namespace std;
@@ -44,14 +45,24 @@ double getInput (const char *sMessage)
 
 int main()
 {
+    CartesianFunction *cartesianFunction;
+    cout << "Choose: "              << endl
+         << "1. Sigmoid"            << endl
+         << "2. Sigmoid Derivative" << endl
+         << "Enter your choice: ";
+    switch ((int)getInput("")) {
+    case 1:
+        cartesianFunction = new SigmoidFunction();
+        break;
+    case 2:
+        cartesianFunction = new SigmoidDerivative();
+    }
+
     double minValue = getInput("Enter min value: ");
     double maxValue = getInput("Enter max value: ");
     double iterations = getInput("Enter number of iterations: ");
     double zoomX = getInput("Enter ZoomX: ");
     double zoomY = getInput("Enter ZoomY: ");
-
-    SigmoidFunction *cartesianFunction = new SigmoidFunction();
-
     Cartesian cartesian;
     cartesian.renderFunction(cartesianFunction, minValue, maxValue, iterations, zoomX, zoomY);
 }

@@ -1,19 +1,24 @@
 # depslib dependency file v1.0
-1515338670 source:d:\dev\non-www\cpp\cartesian\main.cpp
+1515340556 source:d:\dev\non-www\cpp\cartesian\main.cpp
 	<iostream>
 	"cartesian.h"
+	"sigmoid-derivative.h"
 	"sigmoid.h"
 
 1515338733 source:d:\dev\non-www\cpp\cartesian\cartesian.cpp
 	"cartesian.h"
 
-1515338660 d:\dev\non-www\cpp\cartesian\cartesian.h
+1515339715 d:\dev\non-www\cpp\cartesian\cartesian.h
 	<windows.h>
 	"cartesian-function.h"
 
 1515337111 d:\dev\non-www\cpp\cartesian\cartesian-function.h
 
 1515337603 d:\dev\non-www\cpp\cartesian\sigmoid.h
+	"cartesian-function.h"
+	<cmath>
+
+1515340095 d:\dev\non-www\cpp\cartesian\sigmoid-derivative.h
 	"cartesian-function.h"
 	<cmath>
 
