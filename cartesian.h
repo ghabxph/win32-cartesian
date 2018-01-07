@@ -26,23 +26,13 @@
 class Cartesian
 {
 public:
-
     /// Renders the Cartesian plane
     void renderFunction(CartesianFunction *cartesianFunction, double minValue, double maxValue, double iterations, double zoomX, double zoomY);
 
 private:
-
     /// Plots a specific point in the Cartesian plane
     void plot (HDC hDeviceContext, double x, double y, COLORREF color, double xUnitPerDot, double yUnitPerDot);
 
     /// Draws Cartesian line
     void drawCartesianLine();
 };
-
-
-
-
-
-
-
-
