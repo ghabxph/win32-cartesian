@@ -61,12 +61,6 @@ int main()
         cout << "You entered invalid input." << endl;
         return 0;
     }
-
-    double minValue = getInput("Enter min value: ");
-    double maxValue = getInput("Enter max value: ");
-    double iterations = getInput("Enter number of iterations: ");
-    double zoomX = getInput("Enter ZoomX: ");
-    double zoomY = getInput("Enter ZoomY: ");
     Cartesian cartesian;
-    cartesian.renderFunction(cartesianFunction, minValue, maxValue, iterations, zoomX, zoomY);
+    cartesian.renderFunction(cartesianFunction, -15, 15, 500, 155, 9);
 }
