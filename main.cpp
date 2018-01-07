@@ -56,6 +56,10 @@ int main()
         break;
     case 2:
         cartesianFunction = new SigmoidDerivative();
+        break;
+    default:
+        cout << "You entered invalid input." << endl;
+        return 0;
     }
 
     double minValue = getInput("Enter min value: ");
